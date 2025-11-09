@@ -52,6 +52,10 @@ app.post("/create-checkout-session", async (req, res) => {
   }
 });
 
+app.get("/hey", (req, res) => {
+  res.send("hey from be");
+});
+
 // ✅ Use numeric port and console log message
 app.listen(5000, () => {
   console.log("🔥 Server running on port 5000");
