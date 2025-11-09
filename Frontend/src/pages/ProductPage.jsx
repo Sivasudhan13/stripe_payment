@@ -36,7 +36,7 @@ const ProductPage = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:5000/create-checkout-session",
+        "https://edj9qgui8s.us-east-1.awsapprunner.com/create-checkout-session",
         { product }
       );
       window.location.href = response.data.url; // Redirect to Stripe Checkout
